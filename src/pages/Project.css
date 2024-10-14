@@ -1,0 +1,47 @@
+/* Projects.css */
+.projects-container {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects-container h2 {
+  font-size: 2.5rem;
+  color: #282c34;
+  margin-bottom: 40px;
+}
+
+.projects-layout {
+  display: flex; /* Use flexbox for layout */
+  gap: 20px;
+}
+
+.projects-list {
+  flex: 1; /* Takes up 1 part of the flex space */
+  max-width: 300px; /* Optional: max width for the list */
+  border-right: 1px solid #000000; /* Optional: border for separation */
+  padding: 20px;
+  
+  text-align: left;
+}
+
+.project-item {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid transparent; /* Default border */
+  transition: border 0.3s ease; /* Smooth border transition */
+}
+
+.project-item:hover {
+  border: 1px solid #61dafb; /* Change border on hover */
+}
+
+.project-display {
+  flex: 2; /* Takes up 2 parts of the flex space */
+  padding: 20px;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text to the left */
+}

@@ -1,0 +1,94 @@
+/* src/components/LanternButton.css */
+.lantern-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    outline: none;
+    transition: transform 0.3s;
+    z-index: 1000; /* Keep the button above other content */
+  }
+  
+  @media (max-width: 768px) {
+    .lantern-button {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  /* Lantern icon */
+  .lantern-icon {
+    width: 100%;
+    height: 100%;
+    background-image: url('lantern.png'); /* Add your lantern icon here */
+    background-size: cover;
+    animation: rotate 3s linear infinite; /* Rotate icon */
+  }
+  
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Make it responsive */
+    max-width: 600px;
+    background: linear-gradient(135deg, #ff6b6b, #f7c94c);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    z-index: 1001; /* Keep the popup above other content */
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .popup {
+      width: 95%; /* Full width on mobile */
+    }
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align: center;
+  }
+  
+  .card h3 {
+    margin: 0 0 10px;
+    color: #282c34;
+  }
+  
+  .card p {
+    color: #555;
+  }
+  
